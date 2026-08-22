@@ -1,0 +1,2 @@
+﻿'\n<think>\nThinking Process:\n1.  **Analyze User Input**: The user explicitly requests: "Reply ONLY with this JSON: {"x": 1}".\n2.  **Identify Constraints**: The constraint is strict: "Reply ONLY with this JSON". No extra text, no explanations, just the exact JSON string.\n3.  **Formulate Output**: The exact string to output is `{"x": 1}`.\n4.  **Verify Constraints**: Check if the output matches exactly. Yes.\n5.  **Generate Response**: Output `{"x": 1}`.Γ£à\n</think>\n\n{"x": 1}'
+RAW OUTPUT:

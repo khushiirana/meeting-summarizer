@@ -1,0 +1,11 @@
+﻿=== Test 1: thinking token stripping ===
+Parsed OK: {'summary': 'Team decided to launch Friday.', 'key_decisions': ['Launch on Friday'], 'action_items': ['John prepares slides']}
+PASS
+
+=== Test 2: real model call (short transcript) ===
+[summarize] transcript length : 405 chars
+[summarize] chunks            : 1
+Summary: The team convened to finalize the product launch date and assign follow-up tasks. They agreed to proceed with a launch on Friday the 25th and delegated responsibilities for creating presentation materials and notifying stakeholders. The meeting concluded promptly after these arrangements were confirmed.
+Decisions: ['Product launch date set for Friday the 25th']
+Actions: ['Bob: Prepare launch slides by Wednesday', 'Carol: Send invitations to all stakeholders by Tuesday']
+PASS
