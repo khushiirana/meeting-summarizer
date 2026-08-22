@@ -5,7 +5,7 @@ const ACCEPTED = ".mp3,.mp4,.wav,.m4a,.ogg,.flac,.webm";
 
 export default function AudioUploader({ onUploaded }) {
   const [dragging, setDragging] = useState(false);
-  const [progress, setProgress]   = useState(null);   // 0-100 or null
+  const [progress, setProgress]   = useState(null);
   const [error, setError]         = useState(null);
   const inputRef = useRef();
 
@@ -32,7 +32,7 @@ export default function AudioUploader({ onUploaded }) {
   };
 
   return (
-    <div className="mb-10">
+    <div className="w-full relative">
       {/* Drop zone */}
       <div
         onClick={() => inputRef.current.click()}
@@ -40,45 +40,42 @@ export default function AudioUploader({ onUploaded }) {
         onDragLeave={() => setDragging(false)}
         onDrop={onDrop}
         className={`
-          relative border-2 border-dashed rounded-2xl px-8 py-12 text-center cursor-pointer
+          flex flex-col items-center justify-center p-12 rounded-xl border-2 text-center cursor-pointer
           transition-all duration-200 group
           ${dragging
-            ? "border-violet-500 bg-violet-50 scale-[1.01]"
-            : "border-slate-200 hover:border-violet-400 hover:bg-violet-50/40 bg-white"
+            ? "border-solid border-accent-purple bg-accent-purple/15 scale-105"
+            : "border-dashed border-accent-purple bg-accent-purple/5 hover:border-solid hover:bg-accent-purple/10 hover:scale-[1.02]"
           }
         `}
       >
-        {/* Icon */}
-        <div className={`
-          mx-auto w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-4
-          transition-colors duration-200
-          ${dragging ? "bg-violet-100" : "bg-slate-100 group-hover:bg-violet-100"}
-        `}>
+        <div className="text-[50px] mb-4 transition-transform duration-200 group-hover:scale-110">
           🎙️
         </div>
 
-        <p className="text-base font-semibold text-slate-700 mb-1">
-          {dragging ? "Drop your audio file here" : "Upload Meeting Audio"}
+        <p className="text-lg font-bold text-white mb-2">
+          {dragging ? "Drop audio here" : "Drag audio here or click to browse"}
         </p>
-        <p className="text-sm text-slate-400 mb-5">
-          Drag & drop or click to browse — MP3, WAV, MP4, M4A, OGG, FLAC, WEBM
+        <p className="text-sm text-gray-400 mb-8 max-w-sm mx-auto">
+          Accepted: .mp3 .wav .mp4 .m4a .ogg .flac .webm<br/>
+          Max size: 25MB
         </p>
 
         <button
           type="button"
           onClick={(e) => { e.stopPropagation(); inputRef.current.click(); }}
           className="
-            inline-flex items-center gap-2 px-6 py-2.5 rounded-xl
-            bg-violet-600 hover:bg-violet-700 active:bg-violet-800
-            text-white text-sm font-semibold shadow-sm
-            transition-colors duration-150
+            inline-flex items-center justify-center gap-2 px-10 py-4 rounded-lg
+            bg-gradient-to-br from-accent-purple to-accent-pink
+            text-white text-base font-bold
+            transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]
+            hover:shadow-glow-strong shadow-glow
           "
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
           </svg>
-          Choose File
+          Upload Audio
         </button>
 
         <input
@@ -92,14 +89,14 @@ export default function AudioUploader({ onUploaded }) {
 
       {/* Progress bar */}
       {progress !== null && (
-        <div className="mt-4 bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
-          <div className="flex justify-between text-xs font-medium text-slate-500 mb-2">
-            <span>Uploading…</span>
-            <span>{progress}%</span>
+        <div className="absolute -bottom-16 left-0 right-0 bg-dark-800 border border-dark-700 rounded-xl p-4 shadow-lg animate-slide-up z-10">
+          <div className="flex justify-between text-sm font-medium text-gray-300 mb-2">
+            <span className="animate-pulse-soft">Uploading…</span>
+            <span className="text-accent-cyan">{progress}%</span>
           </div>
-          <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div className="h-2 bg-dark-900 rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-violet-500 to-indigo-500 rounded-full transition-all duration-300"
+              className="h-full bg-gradient-to-r from-accent-purple to-accent-cyan rounded-full transition-all duration-300 shadow-glow"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -108,9 +105,9 @@ export default function AudioUploader({ onUploaded }) {
 
       {/* Error */}
       {error && (
-        <div className="mt-3 flex items-start gap-2 p-3 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm">
-          <span className="mt-0.5">⚠️</span>
-          <span>{error}</span>
+        <div className="mt-6 flex items-center gap-3 p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm animate-slide-up">
+          <span>⚠️</span>
+          <span className="font-medium">{error}</span>
         </div>
       )}
     </div>
