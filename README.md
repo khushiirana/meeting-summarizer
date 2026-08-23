@@ -1,5 +1,10 @@
 # 🎙️ Meeting Summarizer
 
+## 🎥 Project Demonstration
+
+The complete project demonstration video is available here: (./demo.mp4)
+
+
 > **Transform meeting chaos into actionable insights** — Automatically transcribe and summarize your meetings with AI-powered precision.
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
