@@ -17,7 +17,7 @@ Watch the complete project demonstration video to see Meeting Summarizer in acti
 
 https://github.com/khushiirana/meeting-summarizer/raw/main/demo.mp4
 
-**Alternative Links:**
+**Alternative Link:**
 - [☁️ Watch on Google Drive (Recommended)](https://drive.google.com/file/d/16nh91Pv5UcTfKH08XtGs552v8p77aIoq/view?usp=sharing)
   
 
