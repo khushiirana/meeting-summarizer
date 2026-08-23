@@ -19,7 +19,7 @@ https://github.com/khushiirana/meeting-summarizer/raw/main/demo.mp4
 
 **Alternative Links:**
 - [☁️ Watch on Google Drive (Recommended)](https://drive.google.com/file/d/16nh91Pv5UcTfKH08XtGs552v8p77aIoq/view?usp=sharing)
-- [⬇️ Download Video](./demo.mp4)
+  
 
 ## 📌 About
 
@@ -374,7 +374,7 @@ Free to use for personal, academic, and commercial purposes.
 ## 👋 About the Author
 
 **Khushi** (ID: 25MCA0075)  
-**VIT Chennai — Center for Development of Computing (CDC)**  
+**VIT Vellore — Center for Development of Computing (CDC)**  
 **Unthinkable Internship Program**
 
 💼 Building practical AI applications that solve real problems.
@@ -398,14 +398,13 @@ Have questions or found a bug? Here are your options:
 ## 🙏 Acknowledgments
 
 - **OpenAI** — Whisper & GPT-4o APIs
-- **VIT CDC** — Project guidance & mentorship
 - **FastAPI & React Communities** — Amazing tools & documentation
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by Khushi**
+
 
 If you found this project helpful, please consider giving it a ⭐
 
