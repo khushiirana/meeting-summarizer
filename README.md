@@ -15,6 +15,7 @@
 
 The complete project demonstration video is available here:
 [▶ Watch Demo Video](./demo.mp4)
+ Note: GitHub may require the video file to be downloaded for viewing due to its file preview limitations
 
 ## 📌 About
 
