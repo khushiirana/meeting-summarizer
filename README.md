@@ -1,9 +1,5 @@
 # 🎙️ Meeting Summarizer
 
-## 🎥 Project Demonstration
-
-The complete project demonstration video is available here: (./demo.mp4)
-
 
 > **Transform meeting chaos into actionable insights** — Automatically transcribe and summarize your meetings with AI-powered precision.
 
@@ -14,6 +10,11 @@ The complete project demonstration video is available here: (./demo.mp4)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 ---
+
+## 🎥 Project Demonstration
+
+The complete project demonstration video is available here:
+[▶ Watch Demo Video](./demo.mp4)
 
 ## 📌 About
 
