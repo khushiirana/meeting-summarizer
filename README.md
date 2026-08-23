@@ -13,9 +13,13 @@
 
 ## 🎥 Project Demonstration
 
-The complete project demonstration video is available here:
-[▶ Watch Demo Video](./demo.mp4)
- Note: GitHub may require the video file to be downloaded for viewing due to its file preview limitations
+Watch the complete project demonstration video to see Meeting Summarizer in action!
+
+https://github.com/khushiirana/meeting-summarizer/raw/main/demo.mp4
+
+**Alternative Links:**
+- [☁️ Watch on Google Drive (Recommended)](https://drive.google.com/file/d/16nh91Pv5UcTfKH08XtGs552v8p77aIoq/view?usp=sharing)
+- [⬇️ Download Video](./demo.mp4)
 
 ## 📌 About
 
